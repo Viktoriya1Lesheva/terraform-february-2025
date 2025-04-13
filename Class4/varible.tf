@@ -1,15 +1,14 @@
 variable aws_key {
     default = "hello-key"
+    type = string
 }
 
 variable region {
     default = "us-east-2"
+    type = string
 }
 
-variable port1 {
-    default = 22
-}
-
-variable port2 {
-    default = 80
+variable port {
+    default = [22, 80]
+    type = list
 }
