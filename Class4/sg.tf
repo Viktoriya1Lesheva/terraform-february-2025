@@ -26,7 +26,5 @@ resource "aws_security_group" "allow_tls" {
     ipv6_cidr_blocks = ["::/0"]
   }
 
-  tags = {
-    Name = "allow_tls"
-  }
+  tags = local.common_tags
 }
